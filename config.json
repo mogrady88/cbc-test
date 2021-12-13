@@ -1,0 +1,13 @@
+{
+  "localHostPort": 6061,
+  "remoteURL": "core.alteryx.com",
+  "supportedBrowsers": [
+    "Google Chrome",
+    "Safari",
+    "Microsoft Edge",
+    "Firefox"
+  ],
+  "disabledBrowsers": [
+    "Google Chrome"
+  ]
+}
