@@ -7,7 +7,5 @@
     "Microsoft Edge",
     "Firefox"
   ],
-  "disabledBrowsers": [
-    "Google Chrome"
-  ]
+  "disabledBrowsers": []
 }

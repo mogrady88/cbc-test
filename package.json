@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "Open your app in multiple browsers to test compatability",
   "main": "cli.js",
-  "scripts": {
-    "cbc": "node -e 'require(\"./node_modules/cli.js\").openBrowsers()'",
-    "cbc-single": "node -e 'require(\"./cli.js\").openBrowser()'",
-    "cbc-disable": "node -e 'require(\"./cli.js\").disableBrowser()'"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mogrady88/cbc-test.git"
@@ -23,7 +18,7 @@
     "url": "https://github.com/mogrady88/cbc-test/issues"
   },
   "bin": {
-    "open": "./cli.js"
+    "cbc": "cli.js"
   },
   "homepage": "https://github.com/mogrady88/cbc-test#readme"
 }
