@@ -29,7 +29,7 @@ const openBrowser = (e, remote) => {
     return `Browser: ${browser} is not supported`;
   }
   remote
-    ? exec(`/usr/bin/open -a ${browser} http://${config.remoteURL}`)
+    ? exec(`/usr/bin/open -a ${browser} https://${config.remoteURL}`)
     : exec(
         `/usr/bin/open -a ${browser} http://localhost:${config.localHostPort}`
       );
