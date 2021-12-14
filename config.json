@@ -1,6 +1,6 @@
 {
-  "localHostPort": 6061,
-  "remoteURL": "core.alteryx.com",
+  "localHostPort": 3000,
+  "remoteURL": "www.google.com",
   "supportedBrowsers": [
     "Google Chrome",
     "Safari",

@@ -42,15 +42,13 @@ const enableAllBrowsers = () => {
 
 const openRemoteBrowsers = () => {
   supportedBrowsers.forEach((e) => {
-    if (disabledBrowsers.includes(e)) return;
-    openBrowser(e, true);
+    if (!disabledBrowsers.includes(e)) openBrowser(e, true);
   });
 };
 
 const openLocalBrowsers = () => {
   supportedBrowsers.forEach((e) => {
-    if (disabledBrowsers.includes(e)) return;
-    openBrowser(e, false);
+    if (!disabledBrowsers.includes(e)) openBrowser(e, false);
   });
 };
 
@@ -68,6 +66,7 @@ const disableBrowser = (browserToDisable) => {
 const setRemoteUrl = (url) => {
   if (typeof url !== "string") return "URL must be a string";
   if (url.startsWith("http://")) url = url.substring(7);
+  if (url.startsWith("https://")) url = url.substring(8);
   config.remoteURL = url;
   writeToConfig();
 };
